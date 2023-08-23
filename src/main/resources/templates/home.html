@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title th:text="${title}"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="../static/css/home.css" th:href="@{/css/home.css}" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="navigation">
+            <h4 class="title-site">DevProduct</h4>
+            <nav>
+                <a class="bth" href="/about">About</a>
+                <a class="bth" href="#">Group VK</a>
+                <a class="bth" href="#">Author</a>
+            </nav>
+        </div>
+
+        <section class="section">
+
+            <div class="product">
+                <img src="https://www.designrepublik.com/wp-content/uploads/2016/02/100.jpg" alt="product" class="images">
+                <h4 class="name_product">WebSite</h4>
+                <p class="about-product">Website on order</p>
+
+                <div class="info-price">
+                    <form action="#" method="post">
+                        <button type="submit" class="buy-button">4000₽</button>
+                    </form>
+                </div>
+            </div>
+            
+            <br>
+
+            <div class="product">
+                <img src="https://www.bilgibilir.com/assets/images/2020/telegraf.png" alt="product" class="images">
+                <h4 class="name_product">Telegram bot</h4>
+                <p class="about-product">Telegram bot on order</p>
+
+                <div class="info-price">
+                    <form action="#" method="post">
+                        <button type="submit" class="buy-button">2500₽</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="foot">
+            <p class="footer-text">
+                Information in VK Group Developer <a href="https://vk.com/alexdev_slash_code" class="vk" target="_blank">Group Developer</a>
+            </p>
+        </footer>
+    </body>
+</html>
